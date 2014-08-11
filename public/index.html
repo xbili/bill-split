@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bill Splitter</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body>
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h1>Items you bought</h1>
+      <button id="addItem" class="btn btn-lg btn-primary" onclick="main()">Add Item</button>
+    </div>
+    <div class="panel-body">  
+      <table id="items" class="table">
+        <thead>
+          <td><h2>Name</h2></td>
+          <td><h2>Price</h2></td>
+        </thead>
+        <tbody>
+          <!-- Items comes in here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <h3 id="gstTax">GST + Tax: $0</h3>
+      <h2 id="total">Total: $0</h2>
+    </div>
+  </div>
+</div>
+<script src="javascripts/app.js"></script>
+</body>
+</html>
